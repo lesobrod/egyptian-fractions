@@ -1,4 +1,4 @@
-function checkLEF(f::Rational{BigInt}, k::Int)
+function checkLEF(f::Rational{BigInt}, k::Int)::Bool
   # Return true, if for f < 1 there is egyptian fraction of length k
   # Otherwise false
   isone(numerator(f)) && return true
