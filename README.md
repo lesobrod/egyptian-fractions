@@ -10,3 +10,26 @@ By [greedy algorithm](https://r-knott.surrey.ac.uk/Fractions/egyptian.html#secti
 $$4/17 = 1/5 + 1/29 + 1/1233 + 1/3039345$$  
 but  
 $$4/17 = 1/5 + 1/30 + 1/510$$
+## Fractional part of harmonic number
+Let's look at $ceil(H(n))-H(n)$ and  $H(n)-floor(H(n))$  
+*These amounts we have to add or remove from H(n) to get an integer*  
+We can always expand these amounts into egyptian fractions.  
+The question is:  
+**What is the shortest length a(n) of egyptian fraction that we need to add (or subtract from) given harmonic number to get integer?**  
+Now this is [draft on OEIS](https://oeis.org/draft/A363937)  
+### Examples
+$n=3, H(n)=11/6$  
+$\lceil H(n)\rceil-H(n)=1/6$  
+$H(n)-\lfloor H(n)\rfloor=5/6=1/2+1/3$,  
+so $a(3)=1$  
+
+$n=5, H(n)=137/60$  
+$\lceil H(n)\rceil-H(n)=43/60 = 1/2+1/6+1/20$  
+$H(n)-\lfloor H(n)\rfloor=17/60=1/5+1/12$  
+so $a(5)=2$  
+### Important note
+Let LSEF means length of the shortest egyptian fraction. Than:  
+X < Y ⇏ LSEF(X) < LSEF(Y)  
+The first counterexample:  
+$$3/7 = 1/3 + 1/11 + 1/231, 4/7 = 1/2 + 1/14$$  
+
