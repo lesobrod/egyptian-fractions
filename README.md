@@ -39,3 +39,11 @@ $LSEF(H(n)-\lfloor H(n)\rfloor)$.
 There is strong conjecture that for such kind of numbers  
 $$X < Y \quad \verb|⇒| \quad LSEF(X) < LSEF(Y)$$
 but this is very open question.  
+## [Algorithm for LSEF(p/q)](https://mathoverflow.net/questions/308385/what-is-the-shortest-length-of-an-egyptian-fraction-expansion-for-a-given-p-q)
+If there is an expansion with k terms, one of the denominators is at most kq/p. 
+So to check whether there is an expansion with at most k terms: for each m from ⌈q/p⌉ to ⌊kq/p⌋, check recursively whether p/q−1/m has an expansion with at most k−1 terms.  
+The existence of polynomial time algorithms for these problems, or more generally the computational complexity of such problems, remains unknown.
+### Julia code
+[Thanks for answers](https://discourse.julialang.org/t/fast-recursion-with-big-rationals/101023)
+
+### Julia code for a(n)
