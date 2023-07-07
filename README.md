@@ -1,4 +1,4 @@
-# Egyptian fractions of frac() of harmonic numbers
+# Egyptian fractions of harmonic numbers
 ## [Harmonic numbers](https://en.wikipedia.org/wiki/Harmonic_number)   
 $$H(n) = \sum_{k=1}^{n}\dfrac{1}{k}$$  
 - $\lim_{n \to \infty} H(n) = \infty$
@@ -29,7 +29,13 @@ $H(n)-\lfloor H(n)\rfloor=17/60=1/5+1/12$
 so $a(5)=2$  
 ### Important note
 Let LSEF means length of the shortest egyptian fraction. Than:  
-X < Y ⇏ LSEF(X) < LSEF(Y)  
+$$X < Y \quad \verb|⇏| \quad LSEF(X) < LSEF(Y)$$
+ 
 The first counterexample:  
-$$3/7 = 1/3 + 1/11 + 1/231, 4/7 = 1/2 + 1/14$$  
-
+$$3/7 = 1/3 + 1/11 + 1/231$$ 
+$$4/7 = 1/2 + 1/14$$  
+So objectively we should check both $LSEF(\lceil H(n)\rceil-H(n))$ and   
+$LSEF(H(n)-\lfloor H(n)\rfloor)$.  
+There is strong conjecture that for such kind of numbers  
+$$X < Y \quad \verb|⇒| \quad LSEF(X) < LSEF(Y)$$
+but this is very open question.  
