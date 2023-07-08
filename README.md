@@ -2,7 +2,7 @@
 ## [Harmonic numbers](https://en.wikipedia.org/wiki/Harmonic_number)   
 $$H(n) = \sum_{k=1}^{n}\dfrac{1}{k}$$  
 - $\lim_{n \to \infty} H(n) = \infty$
-- $H(n)$ is an integer iff $n = 1$ 
+- $H(n)$ is never integer except $n = 1$ 
 ## [Egyptian fractions](https://en.wikipedia.org/wiki/Egyptian_fraction)
 $$\dfrac{6}{7}=\dfrac{1}{2}+\dfrac{1}{3}+\dfrac{1}{42}$$
 ###  [Shortest egyptian fractions](https://r-knott.surrey.ac.uk/Fractions/egyptian.html#section6.1) 
@@ -28,9 +28,9 @@ $\lceil H(n)\rceil-H(n)=43/60 = 1/2+1/6+1/20$
 $H(n)-\lfloor H(n)\rfloor=17/60=1/5+1/12$  
 so $a(5)=2$  
 ### Important note
-Let LSEF means length of the shortest egyptian fraction. Than:  
+Let **LSEF** means *length of the shortest egyptian fraction*.  
+Than:  
 $$X < Y \quad \verb|⇏| \quad LSEF(X) < LSEF(Y)$$
- 
 The first counterexample:  
 $$3/7 = 1/3 + 1/11 + 1/231$$ 
 $$4/7 = 1/2 + 1/14$$  
@@ -43,7 +43,7 @@ but this is very open question.
 If there is an expansion with k terms, one of the denominators is at most kq/p. 
 So to check whether there is an expansion with at most k terms: for each m from ⌈q/p⌉ to ⌊kq/p⌋, check recursively whether p/q−1/m has an expansion with at most k−1 terms.  
 The existence of polynomial time algorithms for these problems, or more generally the computational complexity of such problems, remains unknown.
-### Julia code
-[Thanks for answers](https://discourse.julialang.org/t/fast-recursion-with-big-rationals/101023)
+### [Julia code for LSEF](https://github.com/lesobrod/egyptian-fractions/blob/main/FindLSEF.jl)
+[Thanks for answers](https://discourse.julialang.org/t/fast-recursion-w)ith-big-rationals/101023)
 
-### Julia code for a(n)
+### [Julia code for a(n)]()
