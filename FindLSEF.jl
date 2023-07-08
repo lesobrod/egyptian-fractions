@@ -9,11 +9,10 @@ function checkLEF(f::Rational{BigInt}, k::Int)::Bool
   false
 end
 
-function LSEF(f::Rational{BigInt})
+function LSEF(f::Rational{BigInt})::Int
   k = 1
   while checkLEF(f, k)
     k++
   end
   k
 end
-    
