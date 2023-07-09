@@ -13,4 +13,4 @@ function scanHLSEF(mn, mx)
   end
 end
 
-scanHLSEF(2, 10)
+scanHLSEF(2, 20)
