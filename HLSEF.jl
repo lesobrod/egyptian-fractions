@@ -6,11 +6,11 @@ function harmNum(n)
 end
 
 function scanHLSEF(mn, mx)
-	for j = mn:mx
+  for j = mn:mx
     h = harmNum(j)
     res = min(LSEF(h) - floor(BigInt, h), LSEF(ceil(BigInt, h) - h))
-    println("$(j)-th harmonic number needs $(LSEF(j)) egyptian fraction to reach integer")
-	end
+    println("$(j)-th harmonic number needs $(res) egyptian fraction to reach integer")
+  end
 end
 
 scanHLSEF(2, 10)
