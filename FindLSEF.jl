@@ -10,9 +10,13 @@ function checkLEF(f::Rational{BigInt}, k::Int)::Bool
 end
 
 function LSEF(f::Rational{BigInt})::Int
+  # Return the minimal possible length of egyptian fraction for f
   k = 1
-  while checkLEF(f, k)
-    k++
+  while !checkLEF(f, k)
+    k+=1
   end
   k
 end
+
+# Example
+println("Length of shortest egyptian fraction for 4/17 is ", LSEF(Rational{BigInt}(4,17)))
