@@ -24,8 +24,8 @@ $H(n)-\lfloor H(n)\rfloor=5/6=1/2+1/3$,
 so $a(3)=1$  
 
 $n=5, H(n)=137/60$  
-$\lceil H(n)\rceil-H(n)=43/60 = 1/2+1/6+1/20$  
-$H(n)-\lfloor H(n)\rfloor=17/60=1/5+1/12$  
+$\lceil H(n)\rceil-H(n) = 17/60 = 1/5 + 1/12$  
+$H(n)-\lfloor H(n)\rfloor = 43/60 = 1/2 + 1/6 + 1/20$  
 so $a(5)=2$  
 ### Important note
 Let **LSEF** means *length of the shortest egyptian fraction*.  
