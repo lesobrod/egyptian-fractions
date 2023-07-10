@@ -65,14 +65,16 @@ We call **b(n) the minimal number of distinct reciprocals that we need to add to
 given harmonic number to get integer**  
 So if $\lceil H(n)\rceil-H(n) = EF_{pos_1} - EF_{neg_1}$  
 and $H(n)-\lfloor H(n)\rfloor = EF_{pos_2} - EF_{neg_2}$  
-than $b(n) = min(length(EF_{pos_1})+length(EF_{neg_1}), length(EF_{pos_2})+length(EF_{neg_2}))$
+than $b(n) = min(length(EF_{pos_1})+length(EF_{neg_1}), length(EF_{pos_2})+length(EF_{neg_2}))$  
 For example $b(10) = 2$  
 ### Algorithm for b(n)
 Obviously $b(n) \leq a(n)$ otherwise it makes no sense.  
 
 So we need to check with $SLEF$ all combinations 
-$1/x_1+1/x_2+...+1/x_m -1/y-1,...,1/x_1-1/y_1-...-1/y_m$  
-where $m < a(n) - 1$
+$1/x_1+1/x_2+...+1/x_m -1/y-1,$  
+$...,$  
+$1/x_1-1/y_1-...-1/y_m$  
+where $m < a(n) - 1$  
 ### [Julia code for b(n)]()
 
 
