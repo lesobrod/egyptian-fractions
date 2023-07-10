@@ -70,8 +70,8 @@ For example $b(10) = 2$
 ### Algorithm for b(n)
 Obviously $b(n) \leq a(n)$ otherwise it makes no sense.  
 
-So we need to check with $SLEF$ all combinations 
-$1/x_1+1/x_2+...+1/x_m -1/y-1,$  
+So we need to check with $SLEF$ all combinations  
+$1/x_1+...+1/x_m -1/y_1,$  
 $...,$  
 $1/x_1-1/y_1-...-1/y_m$  
 where $m < a(n) - 1$  
