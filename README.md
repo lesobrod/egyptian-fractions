@@ -58,7 +58,7 @@ The first example is:
 $n=10, H(n)=7381/2520$  
 $\lceil H(n)\rceil-H(n) = 179/2520 = 1/30 + 1/42 + 1/72$  
 $H(n)-\lfloor H(n)\rfloor = 2341/2520 = 1/2 + 1/7 + 1/8 + 1/9 + 1/20$,  
-so $a(n)=3, but:  
+so $a(10)=3$, but:  
 $179/2520 = 1/14 - 1/2520$  
 
 We call **b(n) the minimal number of distinct reciprocals that we need to add to/subtract from  
@@ -66,7 +66,7 @@ given harmonic number to get integer**
 So if $\lceil H(n)\rceil-H(n) = EF_{pos_1} - EF_{neg_1}$  
 and $H(n)-\lfloor H(n)\rfloor = EF_{pos_2} - EF_{neg_2}$  
 than $b(n) = min(length(EF_{pos_1})+length(EF_{neg_1}), length(EF_{pos_2})+length(EF_{neg_2}))$
-
+For example $b(10) = 2$  
 ### Algorithm for b(n)
 Obviously $b(n) \leq a(n)$ otherwise it makes no sense.  
 
