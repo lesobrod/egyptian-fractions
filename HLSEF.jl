@@ -8,4 +8,17 @@ function scanHLSEF(mn, mx)
   end
 end
 
-scanHLSEF(2, 20)
+println("Input start value:")
+input = readline(stdin)
+start_scan = tryparse(Int, input)
+println("Input end value:")
+input = readline(stdin)
+end_scan = tryparse(Int, input)
+if start_scan !== nothing && end_scan !== nothing && start_scan <= end_scan
+  if end_scan > 20
+   printstyled("Output may be slow after n = 20\n"; color = :red)
+  end
+  scanHLSEF(start_scan, end_scan)
+else
+  @warn "Wrong input"
+end
