@@ -75,6 +75,6 @@ $1/x_1+...+1/x_m -1/y_1,$
 $...,$  
 $1/x_1-1/y_1-...-1/y_m$  
 where $m < a(n) - 1$  
-### [Julia code for b(n)](https://github.com/lesobrod/egyptian-fractions/blob/main/HLSEF.jl)
+### [Julia code for b(n)](https://github.com/lesobrod/egyptian-fractions/blob/main/HCLSEF.jl)
 
 
