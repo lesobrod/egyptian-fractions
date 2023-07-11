@@ -43,7 +43,7 @@ but this is very open question.
 If there is an expansion with k terms, one of the denominators is at most kq/p. 
 So to check whether there is an expansion with at most k terms: for each m from ⌈q/p⌉ to ⌊kq/p⌋, check recursively whether p/q−1/m has an expansion with at most k−1 terms.  
 The existence of polynomial time algorithms for these problems, or more generally the computational complexity of such problems, remains unknown.
-### [Julia code for LSEF](https://github.com/lesobrod/egyptian-fractions/blob/main/FindLSEF.jl)
+### [Julia code for LSEF](https://github.com/lesobrod/egyptian-fractions/blob/main/LSEF.jl)
 [Thanks for answers](https://discourse.julialang.org/t/fast-recursion-with-big-rationals/101023)
 
 ### [Julia code for a(n)](https://github.com/lesobrod/egyptian-fractions/blob/main/HLSEF.jl)
@@ -75,6 +75,6 @@ $1/x_1+...+1/x_m -1/y_1,$
 $...,$  
 $1/x_1-1/y_1-...-1/y_m$  
 where $m < a(n) - 1$  
-### [Julia code for b(n)]()
+### [Julia code for b(n)](https://github.com/lesobrod/egyptian-fractions/blob/main/HLSEF.jl)
 
 
