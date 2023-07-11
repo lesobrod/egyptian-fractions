@@ -17,6 +17,3 @@ function LSEF(f::Rational{BigInt})::Int
   end
   k
 end
-
-# Example
-println("Length of shortest egyptian fraction for 4/17 is ", LSEF(Rational{BigInt}(4,17)))
