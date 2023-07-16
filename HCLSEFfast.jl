@@ -1,12 +1,12 @@
-include("LSEF.jl")
+using FastRationals
+include("LSEFfast.jl")
 
-function checkMixedLEF(f::Rational{BigInt}, k::Int, m::Int)::Bool
+function checkMixedLEF(f::FastRational{BigInt}, k::Int, m::Int)::Bool
 	if isone(m)
 		for i in 2:floor(BigInt, inv(f))
-      checkLEF(1 // i - f, k) && return true
+      checkLEF(FastRational{BigInt}(1//i - f), k) && return true
 		end
-    return false
-    
+    return false    
 		else
 		checkMixedLEF(f, k, m - 1)
 	end
@@ -16,8 +16,8 @@ function scanHCLSEF(mn::Int, mx::Int)
   for n = mn : mx
     # Calculate a(n) (exactly positive or negative HLSEF)
     h = harmNum(n)
-    d_floor = h - floor(BigInt, h)
-    d_ceil = ceil(BigInt, h) - h
+    d_floor = FastRational{BigInt}(h - floor(BigInt, h))
+    d_ceil = FastRational{BigInt}(ceil(BigInt, h) - h)
     high_res = min(LSEF(d_floor), LSEF(d_ceil))
     println("$(n)-th harmonic number needs $(high_res) one-signed egyptian fractions to reach integer")
    
@@ -30,6 +30,7 @@ function scanHCLSEF(mn::Int, mx::Int)
   	end
   end
 end
+
 
 println("Input start value:")
 input = readline(stdin)
