@@ -1,4 +1,5 @@
-include("LSEF.jl")
+using FastRationals
+include("LSEFfast.jl")
 
 function scanHLSEF(mn, mx)
   for n = mn:mx
@@ -22,3 +23,4 @@ if start_scan !== nothing && end_scan !== nothing && start_scan <= end_scan
 else
   @warn "Wrong input"
 end
+
