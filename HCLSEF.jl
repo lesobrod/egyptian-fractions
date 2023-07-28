@@ -3,12 +3,12 @@ include("LSEF.jl")
 function checkMixedLEF(f::Rational{BigInt}, k::Int, m::Int)::Bool
 	if isone(m)
 		for i in 2:floor(BigInt, inv(f))
-      checkLEF(1 // i - f, k) && return true
+          checkLEF(1 // i - f, k) && return true
 		end
-    return false
+        return false
     
 		else
-		checkMixedLEF(f, k, m - 1)
+		   checkMixedLEF(f, k, m - 1)
 	end
 end
 
